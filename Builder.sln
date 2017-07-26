@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{C4DB184A-A0B8-49EF-84BC-9DC37A7D8370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderEx", "BuilderEx\BuilderEx.csproj", "{24DBA2D9-80D0-4321-9F09-6081ACC098EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C4DB184A-A0B8-49EF-84BC-9DC37A7D8370}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4DB184A-A0B8-49EF-84BC-9DC37A7D8370}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4DB184A-A0B8-49EF-84BC-9DC37A7D8370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24DBA2D9-80D0-4321-9F09-6081ACC098EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24DBA2D9-80D0-4321-9F09-6081ACC098EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24DBA2D9-80D0-4321-9F09-6081ACC098EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24DBA2D9-80D0-4321-9F09-6081ACC098EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
