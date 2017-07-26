@@ -10,7 +10,6 @@ namespace Builder
     {
         protected readonly Car _car = new Car();
 
-        // Setter only
         public abstract void SetMaxSpeed();
         public abstract void SetMaxPower();
         public abstract void SetColor();
