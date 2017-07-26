@@ -15,7 +15,9 @@ namespace BuilderEx
 			car.Name = "Toyota";
 			car.Speed = 160;
 
-			Console.WriteLine(car.ToString());*/
+			car.Drive();
+
+			*/
 
 			/*
 			CarFactory factory = new CarFactory();
@@ -29,7 +31,7 @@ namespace BuilderEx
 			foreach(var builder in carBuilders)
 			{
 				var car = factory.BuildCar(builder);
-				Console.WriteLine(car.ToString());
+				car.Drive()
 			}*/
 
 			// drive  cars with fluent
