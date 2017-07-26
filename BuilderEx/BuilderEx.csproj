@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder\CarFactory.cs" />
     <Compile Include="Builder\ToyotaCarBuilder.cs" />
     <Compile Include="Builder\FordCarBuilder.cs" />
     <Compile Include="Builder\CarBuilder.cs" />

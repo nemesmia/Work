@@ -16,20 +16,15 @@ namespace BuilderEx
 			car.Speed = 160;
 
 			Console.WriteLine(car.ToString());*/
-
 			ToyotaCarBuilder toyotaBuilder = new ToyotaCarBuilder();
-			toyotaBuilder.SetName();
-			toyotaBuilder.SetSpeed();
-			var toyota = toyotaBuilder.GetCar();
+			FordCarBuilder fordCarBuilder = new FordCarBuilder();
+
+			CarFactory factory = new CarFactory();
+			var ford = factory.BuildCar(fordCarBuilder);
+			var toyota = factory.BuildCar(toyotaBuilder);
+
 
 			Console.WriteLine(toyota.ToString());
-
-
-			FordCarBuilder fordCarBuilder = new FordCarBuilder();
-			fordCarBuilder.SetName();
-			fordCarBuilder.SetSpeed();
-			var ford = fordCarBuilder.GetCar();
-
 			Console.WriteLine(ford.ToString()); 
 
 			 Console.ReadLine();
