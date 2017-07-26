@@ -17,6 +17,7 @@ namespace BuilderEx
 
 			Console.WriteLine(car.ToString());*/
 
+			/*
 			CarFactory factory = new CarFactory();
 
 			var carBuilders = new List<CarBuilder>
@@ -29,7 +30,23 @@ namespace BuilderEx
 			{
 				var car = factory.BuildCar(builder);
 				Console.WriteLine(car.ToString());
-			}
+			}*/
+
+			// create cars with fluent
+			var ford = new FluentCarBuilder()
+					.WithName("Ford")
+					.WithSpeed(130)
+					.GetChar();
+
+			Console.WriteLine(ford.ToString());
+
+			var toyota = new FluentCarBuilder()
+				.WithName("Toyota")
+				.WithSpeed(150)
+				.GetChar();
+
+			Console.WriteLine(toyota.ToString());
+
 			Console.ReadLine();
 		}
 	}
