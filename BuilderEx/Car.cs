@@ -11,6 +11,6 @@ namespace BuilderEx
 		public string Name { get; set; }
 		public int Speed { get; set; }
 
-		public string Drive() => "Driving {Name} with {Speed} km/h";
+		public override string ToString() => $"Driving {Name} with {Speed} km/h";
 	}
 }

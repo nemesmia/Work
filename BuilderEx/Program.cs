@@ -10,6 +10,14 @@ namespace BuilderEx
 	{
 		static void Main(string[] args)
 		{
+			Car car = new Car();
+
+			car.Name = "Toyota";
+			car.Speed = 160;
+
+			Console.WriteLine(car.ToString());
+
+			Console.ReadLine();
 		}
 	}
 }
