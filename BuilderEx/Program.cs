@@ -32,20 +32,18 @@ namespace BuilderEx
 				Console.WriteLine(car.ToString());
 			}*/
 
-			// create cars with fluent
-			var ford = new FluentCarBuilder()
+			// drive  cars with fluent
+			new FluentCarBuilder()
 					.WithName("Ford")
 					.WithSpeed(130)
-					.GetChar();
+					.GetCar()
+					.Drive();
 
-			Console.WriteLine(ford.ToString());
-
-			var toyota = new FluentCarBuilder()
+			new FluentCarBuilder()
 				.WithName("Toyota")
 				.WithSpeed(150)
-				.GetChar();
-
-			Console.WriteLine(toyota.ToString());
+				.GetCar()
+				.Drive();
 
 			Console.ReadLine();
 		}

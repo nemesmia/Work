@@ -24,7 +24,7 @@ namespace BuilderEx
 			return this;
 		}
 
-		public Car GetChar()
+		public Car GetCar()
 		{
 			var errorMessage = "Cannot create car without: ";
 			if(String.IsNullOrEmpty(Name))
