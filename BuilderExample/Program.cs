@@ -10,14 +10,17 @@ namespace BuilderExample
 	{
 		static void Main(string[] args)
 		{
-			Car v = new Car();
-			v.Name = "Ford";
-			v.Speed = 100;
-			v.Color = "Grün";
+			var builders = new List<CarBuilder>()
+			{
+				new FordCarBuilder(),
+				new DaciaCarBuilder()
+			};
+			var factory = new CarFactory();
 
-
-
-			v.Drive();
+			foreach(var builder in builders)
+			{
+				factory.GetCar(builder).Drive();
+			}
 
 			Console.ReadLine();
 		}
