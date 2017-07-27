@@ -47,6 +47,7 @@
     <Compile Include="Builder\DaciaCarBuilder.cs" />
     <Compile Include="Builder\FordCarBuilder.cs" />
     <Compile Include="Builder\CarBuilder.cs" />
+    <Compile Include="FluentBuilder.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

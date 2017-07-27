@@ -10,17 +10,19 @@ namespace BuilderExample
 	{
 		static void Main(string[] args)
 		{
-			var builders = new List<CarBuilder>()
-			{
-				new FordCarBuilder(),
-				new DaciaCarBuilder()
-			};
-			var factory = new CarFactory();
+			new FluentBuilder()
+				.WithName("Ford")
+				.WithSpeed(100)
+				.WithColor("Red")
+				.GetCar()
+				.Drive();
 
-			foreach(var builder in builders)
-			{
-				factory.GetCar(builder).Drive();
-			}
+			new FluentBuilder()
+			.WithName("Dacia")
+			.WithSpeed(150)
+			.WithColor("Blau")
+			.GetCar()
+			.Drive();
 
 			Console.ReadLine();
 		}
